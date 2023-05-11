@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    font-family: Nunito;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green: #8dc7a4;
+    --white: #fff;
+    --gray: #262626;
+    --green2: #216651;
+    --green3: #e0e6d7;
+    --green4: #74dfbf30;
+}
+
+.container{
+    position: fixed;
+}
+header h2{
+    text-align: center;
+    box-shadow: 2px 5px 10px 2px rgb(0,0,0,0.1);
+}
+.navigation{
+    background: var(--green);
+    width: 250px;
+    position: absolute;
+    border-left: 14px solid var(--green);
+    height: 100%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: left;
+}
+
+.navigation ul li:hover{
+    background-color: var(--white);
+    text-align: center;
+}
+.navigation ul li a{
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    min-width: 50px;
+    height: 60px;
+    padding-right: 10px;
+    margin: 8px;
+    font-size: large;
+    line-height: 80px;
+    text-align: center;
+}
+
+.navigation ul li a .title{
+    line-height: 60px;
+}
+.main-content{
+    margin-left: 280px;
+    margin-top: 10px;
+}
+.cards{
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+.card-single{
+    display: flex;
+    background-color: var(--white);
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px 2px rgb(0,0,0,0.1);
+    margin-left: 25px;
+}
+.card-single span{
+    font-size: 35px;
+    margin: 0 5px 0 0;
+}
+.main-content header{
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+.main-content ul li a{
+    text-decoration: none;
+    color: var(--gray);
+}
+
